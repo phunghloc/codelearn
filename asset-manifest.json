@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/codelearn/static/css/main.84365166.chunk.css",
+    "main.js": "/codelearn/static/js/main.16ddb309.chunk.js",
+    "main.js.map": "/codelearn/static/js/main.16ddb309.chunk.js.map",
+    "runtime-main.js": "/codelearn/static/js/runtime-main.12eb3cbd.js",
+    "runtime-main.js.map": "/codelearn/static/js/runtime-main.12eb3cbd.js.map",
+    "static/css/2.bd2f563d.chunk.css": "/codelearn/static/css/2.bd2f563d.chunk.css",
+    "static/js/2.c8288c7e.chunk.js": "/codelearn/static/js/2.c8288c7e.chunk.js",
+    "static/js/2.c8288c7e.chunk.js.map": "/codelearn/static/js/2.c8288c7e.chunk.js.map",
+    "index.html": "/codelearn/index.html",
+    "precache-manifest.6e027f68aa08cd671d1fcf6ae058a5f9.js": "/codelearn/precache-manifest.6e027f68aa08cd671d1fcf6ae058a5f9.js",
+    "service-worker.js": "/codelearn/service-worker.js",
+    "static/css/2.bd2f563d.chunk.css.map": "/codelearn/static/css/2.bd2f563d.chunk.css.map",
+    "static/css/main.84365166.chunk.css.map": "/codelearn/static/css/main.84365166.chunk.css.map",
+    "static/js/2.c8288c7e.chunk.js.LICENSE.txt": "/codelearn/static/js/2.c8288c7e.chunk.js.LICENSE.txt",
+    "static/media/chia-khoa-lap-trinh.png": "/codelearn/static/media/chia-khoa-lap-trinh.9a00a181.png",
+    "static/media/codelearn-logo.svg": "/codelearn/static/media/codelearn-logo.a296d0aa.svg",
+    "static/media/head-left-bg.png": "/codelearn/static/media/head-left-bg.0afde786.png",
+    "static/media/logo-fpt-footer.svg": "/codelearn/static/media/logo-fpt-footer.2aad0756.svg",
+    "static/media/App.css": "/codelearn/static/media/slick.f97e3bbf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12eb3cbd.js",
+    "static/css/2.bd2f563d.chunk.css",
+    "static/js/2.c8288c7e.chunk.js",
+    "static/css/main.84365166.chunk.css",
+    "static/js/main.16ddb309.chunk.js"
+  ]
+}
