@@ -5,8 +5,7 @@ import { Layout } from 'antd';
 import './App.css';
 import FooterHM from './component/Footer/Footer';
 import HeaderHM from './component/Header/Header';
-
-const { Content } = Layout;
+import HomePage from './component/HomePage/HomePage';
 
 function App() {
   return (
@@ -14,9 +13,7 @@ function App() {
       <Layout className="Layout-Layout">
         <HeaderHM />
 
-        <Content style={{ padding: '0 50px', }}>
-          <div className="site-layout-content">Content</div>
-        </Content>
+        <HomePage />
 
         <FooterHM />
       </Layout>

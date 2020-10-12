@@ -8,15 +8,27 @@
     cursor: pointer;
 }
 
-.SideDrawMenu div {
+.SideDrawMenu-div {
     width: 80%;
-    border-bottom: 3px #333 solid;
+    border-bottom: 3px solid white;
     margin: auto;
     transition: all 0.3s linear;
 }
 
+.SideDrawMenu-div-idle {
+    border-color: white;
+}
+
+/* .SideDrawMenu-Close {
+    margin-right: 17px;
+} */
+
 .SideDrawMenu-Close div:nth-child(1) {
     transform: translateY(13px) rotate(135deg);
+}
+
+.SideDrawMenu-div-idle {
+    border-color: #333;
 }
 
 .SideDrawMenu-Close div:nth-child(2) {

@@ -60,7 +60,7 @@ const footer = () => {
                         </div>
                     </Col>
                     {infomation.map(info => (
-                        <Col key={info.title} className="Footer-Info" lg={4} md={8} xs={24}>
+                        <Col key={info.title} className="Footer-Info" lg={4} sm={8} xs={24}>
                             <h3 className="Footer-Info-Title">{info.title.toLocaleUpperCase()}</h3>
                             <ul>
                                 {info.items.map(item => <li key={item.name}><a href={item.link}>{item.name}</a></li>)}

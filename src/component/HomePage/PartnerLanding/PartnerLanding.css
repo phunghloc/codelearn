@@ -1,0 +1,14 @@
+.PartnerLanding {
+    width: 100%;
+    padding: 40px 5%;
+    background-color: #efefef;
+}
+
+.PartnerLanding-Item {
+    display: flex;
+}
+
+.PartnerLanding-Item img {
+    margin: auto;
+    height: 50px;
+}

@@ -8,6 +8,14 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    transition: all 0.3s ease-in;
+    z-index: 100;
+}
+
+.Header-Header-Idle {
+    background-color: transparent;
+    height: 80px;
+    box-shadow: none;
 }
 
 .Header-Header img {
