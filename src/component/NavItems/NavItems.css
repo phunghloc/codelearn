@@ -1,0 +1,29 @@
+.NavItems-NavItems {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.NavItems-NavItems li {
+    list-style: none;
+    margin: 0 12px;
+    box-sizing: border-box;
+}
+
+.NavItems-NavItems a {
+    padding: 21px 6px;
+    color: var(--accent-color);
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+}
+
+.NavItems-NavItems a:hover, 
+.NavItems-NavItems a.active {
+    color: var(--accent-bg-hover);
+    border-color: var(--accent-bg-hover);
+}
+
+.NavItem:first-child a:hover {
+    border: none;
+}

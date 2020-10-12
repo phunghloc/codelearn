@@ -1,0 +1,35 @@
+.ant-drawer-body {
+    padding: 0;
+}
+
+.Draw-Logo {
+    margin: 18px;
+}
+
+@media (max-width: 991px) {
+    .NavItems-NavItems {
+        flex-direction: column;
+    }
+    
+    .NavItems-NavItems li {
+        margin: 6px 18px;
+        width: calc(100% - 36px);
+        padding-bottom: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .NavItems-NavItems li:first-child {
+        border: none;
+    }
+
+    .NavItems-NavItems a {
+        padding: 21px 6px;
+        color: #3B3C54;
+        border: none;
+    }
+    
+    .NavItems-NavItems a:hover, 
+    .NavItems-NavItems a.active {
+        color: var(--accent-color);
+    }
+}

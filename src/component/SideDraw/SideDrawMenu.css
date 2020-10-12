@@ -1,0 +1,34 @@
+.SideDrawMenu {
+    width: 40px;
+    height: 40px;
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.SideDrawMenu div {
+    width: 80%;
+    border-bottom: 3px #333 solid;
+    margin: auto;
+    transition: all 0.3s linear;
+}
+
+.SideDrawMenu-Close div:nth-child(1) {
+    transform: translateY(13px) rotate(135deg);
+}
+
+.SideDrawMenu-Close div:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.SideDrawMenu-Close div:nth-child(3) {
+    transform: translateY(-13px) rotate(135deg);
+}
+
+@media (min-width: 992px) {
+    .SideDrawMenu {
+        display: none;
+    }
+}
