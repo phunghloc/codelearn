@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ad9243d8aef78e489d948cea7880d5d",
+    "revision": "b973738626326a8737754fa96aa46884",
     "url": "/codelearn/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/codelearn/static/css/2.bd2f563d.chunk.css"
   },
   {
-    "revision": "9413ee08e89715030b9d",
+    "revision": "e47ec0de236cd8c83d31",
     "url": "/codelearn/static/css/main.2b94488a.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/codelearn/static/js/2.f6490b17.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9413ee08e89715030b9d",
-    "url": "/codelearn/static/js/main.72624711.chunk.js"
+    "revision": "e47ec0de236cd8c83d31",
+    "url": "/codelearn/static/js/main.8461df73.chunk.js"
   },
   {
     "revision": "3db2b9c21281bad56a79",
