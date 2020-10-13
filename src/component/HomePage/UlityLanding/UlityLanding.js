@@ -1,65 +1,80 @@
 import React, { useState } from 'react';
-// import { Row, Col } from 'antd';
+import { Row, Col } from 'antd';
 import Slider from "react-slick";
 
 import './UlityLanding.css';
-import img1 from '../../../asset/img/he-thong-hoc-code-manh-me.png';
-// import img2 from '../../../asset/img/noi-dung-bai-hoc-de-hieu.png';
-// import img3 from '../../../asset/img/cong-dong-lap-trinh.png';
-// import img4 from '../../../asset/img/su-kien-lap-trinh.png';
-// import img5 from '../../../asset/img/doi-ngu-ho-tro-codelearn.png';
+import slides from './Content';
 
 const UlityLanding = () => {
     const [nav1, setNav1] = useState();
     const [nav2, setNav2] = useState();
+    const [bgcolor, setBgcolor] = useState(0);
 
+    const settingSlider = {
+        asNavFor: nav2,
+        ref: c => setNav1(c),
+        fade: true,
+        arrows: false,
+        autoplay: true,
+    }
+
+    const settingController = {
+        className: "test",
+        asNavFor: nav1,
+        ref: c => setNav2(c),
+        slidesToShow: 5,
+        focusOnSelect: true,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: true,
+        vertical: true,
+        swipeToSlide: true,
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                vertical: false,
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                vertical: false,
+              }
+            },
+        ],
+        beforeChange: (_, current) => setBgcolor(current),
+    };
 
     return (
-        <div className="UlityLanding">
-        <div className="test">
-                    <Slider asNavFor={nav2} ref={c => setNav1(c)} >
-                        <div className="UlityLanding-img">
-                            <img src={img1} alt=""/>
-                        </div>
-                        <div className="UlityLanding-img">
-                            <img src={img1} alt=""/>
-                        </div>
-                        <div className="UlityLanding-img">
-                            <img src={img1} alt=""/>
-                        </div>
-                        <div className="UlityLanding-img">
-                            <img src={img1} alt=""/>
-                        </div>
-                        <div className="UlityLanding-img">
-                            <img src={img1} alt=""/>
-                        </div>
+        <div className={["UlityLanding UlityLanding-BGColor" + bgcolor]}>
+            <h1>CodeLearn</h1>
+            <h1>Ưu điểm vượt trội</h1>
+            <Row className="UlityLanding-Slide">
+                <Col lg={14} md={24}>
+                    <Slider {...settingSlider} >
+                        {slides.map(slide => (
+                            <img key={slide.title} src={slide.img} alt={slide.title}/>
+                        ))}
                     </Slider>
-        </div>
-
-                    <Slider
-                        asNavFor={nav1}
-                        ref={c => setNav2(c)}
-                        slidesToShow={5}
-                        swipeToSlide={true}
-                        focusOnSelect={true}
-                        arrows={false}
-                    >
-                        <div className="UlityLanding-Div">
-                            <h3>1</h3>
-                        </div>
-                        <div className="UlityLanding-Div">
-                            <h3>1</h3>
-                        </div>
-                        <div className="UlityLanding-Div">
-                            <h3>1</h3>
-                        </div>
-                        <div className="UlityLanding-Div">
-                            <h3>1</h3>
-                        </div>
-                        <div className="UlityLanding-Div">
-                            <h3>1</h3>
-                        </div>
+                </Col>
+                <Col lg={10} md={24} className="UlityLanding-Controller">
+                    <Slider {...settingController}>
+                        {slides.map(slide => (
+                            <div key={slide.title} className="UlityLanding-Div">
+                                <div className="test1">
+                                    <img src={slide.icon} alt={slide.title}/>
+                                    <h3>{slide.title}</h3>
+                                </div>
+                            </div>
+                        ))}
                     </Slider>
+                </Col>
+            </Row>
         </div>
     );
 }

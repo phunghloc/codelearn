@@ -7,7 +7,7 @@ import PartnerLanding from './PartnerLanding/PartnerLanding';
 import FutureLanding from './FutureLanding/FutureLanding';
 import StatisticLanding from './StatisticLanding/StatisticLanding';
 import StepLanding from './StepLanding/StepLanding';
-// import UlityLanding from './UlityLanding/UlityLanding';
+import UlityLanding from './UlityLanding/UlityLanding';
 import RewardLanding from './RewardLanding/RewardLanding';
 import FeedbackLanding from './FeedbackLanding/FeedbackLanding';
 import FooterBanner from './FooterBanner/FooterBanner';
@@ -19,7 +19,7 @@ const content = () => (
         <FutureLanding />
         <StatisticLanding />
         <StepLanding />
-        {/* <UlityLanding /> */}
+        <UlityLanding />    
         <RewardLanding />
         <FeedbackLanding />
         <FooterBanner />

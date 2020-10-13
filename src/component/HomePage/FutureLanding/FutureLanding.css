@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 6%;
+    padding: 0 8% 0 0;
 }
 
 .FutureLanding-Right-Items {
@@ -48,8 +48,8 @@
     margin: auto 0 ;
 }
 
-.FutureLanding-Right-Title h3 {
-    font-size: 24px;
+.FutureLanding-Right-Title h4 {
+    font-size: 18px;
     margin-left: 12px;
     color: var(--accent-bg-hover);
 }
@@ -57,4 +57,17 @@
 .FutureLanding-Right-Items p {
     color: #172B4D;
     font-size: 16px;
+    text-align: justify;
+}
+
+@media (max-width: 1200px) {
+    .FutureLanding-Right {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 576px) {
+    .FutureLanding-Right {
+        padding: 0 1%;
+    }
 }

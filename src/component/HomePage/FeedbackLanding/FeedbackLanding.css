@@ -17,6 +17,7 @@
 .FeedbackLanding-Card {
     width: 90%;
     max-width: 720px;
+    min-height: 340px;
     margin: auto;
     border-radius: 10px;
     background-position: center;
@@ -26,18 +27,14 @@
     background-color: white;
     box-shadow: 30px 30px 0 #E8EFFB;
     box-shadow: 0 0 20px 0 rgba(29,31,89,.1);
-    padding: 80px 60px;
+    padding: 60px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     position: relative;
 }
 
 .FeedbackLanding-Card h2 {
     font-size: 24px;
     color: var(--accent-bg-hover);
-    line-height: 24px;
     margin-bottom: 0;
 }
 

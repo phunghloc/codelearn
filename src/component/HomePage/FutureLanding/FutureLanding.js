@@ -39,7 +39,7 @@ const futureLanding = () => (
                             <div className="FutureLanding-Right-Img">
                                 <img className="FutureLanding-Right-Item" src={content.img} alt="Phát triển tư duy sáng tạo"/>
                             </div>
-                            <h3 className="FutureLanding-Right-Item">{content.title}</h3>
+                            <h4 className="FutureLanding-Right-Item">{content.title}</h4>
                         </div>
                         <p>{content.detail}</p>
                     </div>

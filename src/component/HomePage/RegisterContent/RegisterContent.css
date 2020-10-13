@@ -9,6 +9,7 @@
 
 .RegisterContent-Left {
     padding: 0 2%;
+    min-height: 300px;
 }
 
 .RegisterContent img {
@@ -16,7 +17,7 @@
 }
 
 .RegisterContent-Title {
-    width: 90%;
+    width: 100%;
     max-width: 600px;
     min-height: 240px;
     background-color: white;
@@ -107,8 +108,14 @@
 }
 
 @media (max-width: 575px) {
+    .RegisterContent img {
+        opacity: 0;
+    }
+
     .RegisterContent-Title {
         bottom: 0;
+        padding: 20px;
+        text-align: center;
     }
 }
 
