@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "91e1fa14cd3aab9abcec83cca4f13bb1",
+    "revision": "1ad9243d8aef78e489d948cea7880d5d",
     "url": "/codelearn/index.html"
   },
   {
-    "revision": "89d07c5220380f23cbe4",
+    "revision": "4c9cc55071bfb1634a63",
     "url": "/codelearn/static/css/2.bd2f563d.chunk.css"
   },
   {
-    "revision": "c44e63d0ba6a5cf4dc59",
-    "url": "/codelearn/static/css/main.875a0652.chunk.css"
+    "revision": "9413ee08e89715030b9d",
+    "url": "/codelearn/static/css/main.2b94488a.chunk.css"
   },
   {
-    "revision": "89d07c5220380f23cbe4",
-    "url": "/codelearn/static/js/2.f79f8ef2.chunk.js"
+    "revision": "4c9cc55071bfb1634a63",
+    "url": "/codelearn/static/js/2.f6490b17.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/codelearn/static/js/2.f79f8ef2.chunk.js.LICENSE.txt"
+    "url": "/codelearn/static/js/2.f6490b17.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c44e63d0ba6a5cf4dc59",
-    "url": "/codelearn/static/js/main.fa2b9445.chunk.js"
+    "revision": "9413ee08e89715030b9d",
+    "url": "/codelearn/static/js/main.72624711.chunk.js"
   },
   {
     "revision": "3db2b9c21281bad56a79",
@@ -44,12 +44,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/codelearn/static/media/codelearn-logo.a296d0aa.svg"
   },
   {
+    "revision": "c06536deb41e479cbe3a8b267eb6f0f0",
+    "url": "/codelearn/static/media/cong-dong-lap-trinh.c06536de.png"
+  },
+  {
+    "revision": "1f3734e465dc378b6bad563420938efd",
+    "url": "/codelearn/static/media/doi-ngu-ho-tro-codelearn.1f3734e4.png"
+  },
+  {
+    "revision": "b83085edfeb2b9fe62339fcd8802da57",
+    "url": "/codelearn/static/media/he-thong-hoc-code-manh-me.b83085ed.png"
+  },
+  {
     "revision": "0afde7866a28d51d4a0bfd225d984909",
     "url": "/codelearn/static/media/head-left-bg.0afde786.png"
   },
   {
     "revision": "2aad0756293f53dd7c3235a36a27855b",
     "url": "/codelearn/static/media/logo-fpt-footer.2aad0756.svg"
+  },
+  {
+    "revision": "618476dbc6170fa355dc9b3a2ea00319",
+    "url": "/codelearn/static/media/noi-dung-bai-hoc-de-hieu.618476db.png"
   },
   {
     "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
@@ -66,5 +82,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f97e3bbf73254b0112091d0192f17aec",
     "url": "/codelearn/static/media/slick.f97e3bbf.svg"
+  },
+  {
+    "revision": "98f47dd5a0cb68a4a067bfe2bedcc5be",
+    "url": "/codelearn/static/media/student3.98f47dd5.jpg"
+  },
+  {
+    "revision": "7a1d24bc172dee3f4b7f83fb8608405b",
+    "url": "/codelearn/static/media/su-kien-lap-trinh.7a1d24bc.png"
   }
 ]);
