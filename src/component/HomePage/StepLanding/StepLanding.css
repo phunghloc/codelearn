@@ -1,0 +1,58 @@
+.StepLanding {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.StepLanding h1 {
+    font-size: 42px;
+    color: var(--accent-bg-hover);
+    line-height: 56px;
+}
+
+.StepLanding h2 {
+    font-size: 26px;
+    color: var(--accent-bg-hover);
+}
+
+.StepLanding p {
+    font-size: 18px;
+    color: #172B4D;
+    margin: 0 18px;
+}
+
+.StepLanding-Img {
+    width: 90%;
+    background-color: white;
+    margin: 60px auto 36px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(29,31,89,.1);
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.StepLanding-Img:hover {
+    transform: scale(1.05);
+}
+
+.StepLanding-Img img {
+    width: 100%;
+    max-width: 260px;
+}
+
+.StepLanding-Index {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(90deg,#2c31cf 0%,#b44fff 100%);
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.StepLanding-Index p {
+    margin: auto;
+    color: white;
+    font-size: 500;
+}

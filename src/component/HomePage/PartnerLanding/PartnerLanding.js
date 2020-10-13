@@ -41,7 +41,7 @@ export default class SimpleSlider extends Component {
         <Slider {...settings}>
           {partners.map((partner, index) => (
             <div key={index} className="PartnerLanding-Item">
-                <img src={partner} alt="Logo FPT"/>
+                <img src={partner} alt="Logo Partners"/>
             </div>
           ))}
         </Slider>

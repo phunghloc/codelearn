@@ -1,0 +1,37 @@
+.RewardLanding {
+    padding: 90px 8%;
+}
+
+.RewardLanding-Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.RewardLanding-Info h1 {
+    font-size: 48px;
+    color: var(--accent-bg-hover);
+    line-height: 60px;
+}
+
+.RewardLanding-Info p {
+    font-size: 18px;
+    color: #1E266D;
+    text-align: justify;
+}
+
+.RewardLanding-Img {
+    display: flex;
+}
+
+.RewardLanding img {
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .RewardLanding-Info p {
+        padding-right: 60px;
+    }
+}

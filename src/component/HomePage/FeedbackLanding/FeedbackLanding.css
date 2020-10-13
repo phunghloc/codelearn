@@ -1,0 +1,85 @@
+.FeedbackLanding {
+    overflow: hidden;
+    position: relative;
+}
+
+.FeedbackLanding h1 {
+    font-size: 48px;
+    text-align: center;
+    color: var(--accent-bg-hover);
+}
+
+.FeedbackLanding-Item {
+    width: 400px;
+    padding: 50px 0;
+}
+
+.FeedbackLanding-Card {
+    width: 90%;
+    max-width: 720px;
+    margin: auto;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../../../asset/img/bg-testimonial.png');
+    background-color: white;
+    box-shadow: 30px 30px 0 #E8EFFB;
+    box-shadow: 0 0 20px 0 rgba(29,31,89,.1);
+    padding: 80px 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.FeedbackLanding-Card h2 {
+    font-size: 24px;
+    color: var(--accent-bg-hover);
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.FeedbackLanding-Card span {
+    font-size: 18px;
+    color: #172B4D;
+}
+
+.FeedbackLanding-Card p {
+    margin-top: 36px;
+    font-size: 16px;
+    color: #455880;
+}
+
+.FeedbackLanding-Card img {
+    position: absolute;
+    border-radius: 50%;
+    top: -40px;
+    left: calc(50% - 40px);
+}
+
+.FeedbackLanding-Censor-Right,
+.FeedbackLanding-Censor-Left {
+    position: absolute;
+    height: 85%;
+    width: 15%;
+    bottom: 0;
+}
+
+.FeedbackLanding-Censor-Right {
+    right: 0;
+    background: linear-gradient(90deg,rgba(255,255,255,0) 0%,#fff 100%);
+}
+
+.FeedbackLanding-Censor-Left {
+    left: 0;
+    background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,0) 100%);
+}
+
+@media (max-width: 768px) {
+    .FeedbackLanding-Censor-Right,
+    .FeedbackLanding-Censor-Left {
+        display: none;
+    }
+}

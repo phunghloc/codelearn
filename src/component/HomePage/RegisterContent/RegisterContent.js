@@ -9,14 +9,14 @@ import RegisterForm from './RegisterForm'
 const registerContent = () => (
     <div className="RegisterContent">
         <Row>
-           <Col className="RegisterContent-Left" lg={16} md={24}>
+           <Col className="RegisterContent-Left" xl={16} lg={24}>
                 <img src={img} alt="Head Left"/>
                 <div className="RegisterContent-Title">
                     <h1>HỌC LẬP TRÌNH <br/> TỪ CON SỐ 0</h1>
                     <p>Khởi đầu dễ dàng hơn với CodeLearn</p>
                 </div>
            </Col> 
-           <Col className="RegisterContent-Right" lg={8} md={24}>
+           <Col className="RegisterContent-Right" xl={8} lg={24}>
                 <div className="RegisterContent-Form">
                     <RegisterForm />
                     <p>hoặc sử dụng tài khoản khác</p>

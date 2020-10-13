@@ -1,0 +1,60 @@
+.StatisticLanding {
+    background-attachment: fixed;
+    background-image: url('../../../asset/img/bg-statistic.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    justify-content: space-between;
+}
+
+.StatisticLanding-Row {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.StatisticLanding-Item {
+    padding-bottom: 48px;
+}
+
+.StatisticLanding-Number {
+    margin-left: 50px;
+}
+
+.StatisticLanding-Item h1 {
+    color: white;
+    font-size: 48px;
+    line-height: 36px;
+}
+
+.StatisticLanding-Item h3 {
+    color: white;
+    font-size: 24px;
+}
+
+.StatisticLanding-Item::before {
+    content: "";
+    width: 48px;
+    box-sizing: border-box;
+    position: absolute;
+    border: 3px white solid;
+    border-radius: 10px;
+    top: 42px;
+    left: 53px;
+}
+
+.StatisticLanding button {
+    margin: auto;
+    background-color: #E8505B;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 0 36px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.StatisticLanding button:hover {
+    color: white;
+    background-color: #B21010;
+}

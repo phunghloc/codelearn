@@ -2,6 +2,7 @@
 @import "~slick-carousel/slick/slick.css"; 
 @import "~slick-carousel/slick/slick-theme.css";
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css?family=Muli";
 
 :root {
   --accent-color: #2c31cf;
@@ -10,9 +11,13 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 
 .Layout-Layout {
   background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, button span {
+  font-weight: 700;
 }

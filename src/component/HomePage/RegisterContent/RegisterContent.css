@@ -1,9 +1,9 @@
 .RegisterContent {
-    padding-top: 240px;
+    padding-top: 80px;
     background-image: url('../../../asset/img/head-right-bg.png');
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 35%;
     margin-bottom: 40px;
 }
 
@@ -21,33 +21,32 @@
     min-height: 240px;
     background-color: white;
     position: absolute;
-    bottom: 100px;
-    right: 5%;
+    bottom: 15%;
+    right: 0;
     padding: 25px 35px;
 }
 
 .RegisterContent-Title h1 {
     font-size: 44px;
-    font-weight: bold;
     color: var(--accent-color);
     margin: 0;
 }
 
 .RegisterContent-Title p {
-    font-size: 30px;
+    font-size: 20px;
     margin: 0;
     color: var(--accent-bg-hover);
 }
 
 .RegisterContent-Right {
-    padding-right: 48px;
+    padding: 0 48px;
     display: flex;
 }
 
 .RegisterContent-Form {
     width: 100%;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 25px;
     box-shadow: 0 0 5px #cdcdcd;
     background-color: white;
@@ -103,7 +102,7 @@
 
 @media (max-width: 991px) {
     .RegisterContent-Right {
-        padding-left: 48px;
+        padding: 0 18px;
     }
 }
 

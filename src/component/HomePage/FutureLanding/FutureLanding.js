@@ -29,10 +29,10 @@ const futureLanding = () => (
     <div className="FutureLanding">
         <h2>Lập trình <br/> là xu thế của tương lai</h2>
         <Row>
-            <Col className="FutureLanding-Left" md={12} sm={24} >
+            <Col className="FutureLanding-Left" xl={12} lg={24} >
                 <img src={img} alt=""/>
             </Col>
-            <Col className="FutureLanding-Right" md={12} sm={24} >
+            <Col className="FutureLanding-Right" xl={12} lg={24} >
                 {contents.map(content => (
                     <div key={content.title} className="FutureLanding-Right-Items">
                         <div className="FutureLanding-Right-Title">

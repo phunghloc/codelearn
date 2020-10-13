@@ -46,8 +46,8 @@ const infomation = [
 
 const footer = () => {
     return (
-        <div>
-            <Layout.Footer className="Footer-Footer">
+        <Layout.Footer style={{padding: 0}}>
+            <div className="Footer-Footer">
                 <Row className="Footer-Row">
                     <Col className="Footer-Info" lg={12} md = {24}>
                         <img className="Footer-codelearn-img" src={LogoCodeLearn} alt="CodeLearn logo"/>
@@ -68,12 +68,12 @@ const footer = () => {
                         </Col>
                     ))}
                 </Row>
-            </Layout.Footer>
-            <Layout.Footer className="Footer-Footer">
+            </div>
+            <div className="Footer-Footer">
                 <img src={LogoFPT} alt="FPT Logo Footer"/>
                 <p>Cung cấp bởi <a href="/">CodeLearn</a> © 2020. Đã đăng ký bản quyền rev 9/10/2020 9:44:16 AM</p>
-            </Layout.Footer>
-        </div>
+            </div>
+        </Layout.Footer>
     );
 }
 
