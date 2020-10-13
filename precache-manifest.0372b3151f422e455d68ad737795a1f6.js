@@ -1,35 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e2e3e1906fded057c2602b3ab3b04b3f",
+    "revision": "91e1fa14cd3aab9abcec83cca4f13bb1",
     "url": "/codelearn/index.html"
   },
   {
-    "revision": "971f7ec330ae8bafd26f",
+    "revision": "89d07c5220380f23cbe4",
     "url": "/codelearn/static/css/2.bd2f563d.chunk.css"
   },
   {
-    "revision": "1e305dee79f7aa005221",
-    "url": "/codelearn/static/css/main.84365166.chunk.css"
+    "revision": "c44e63d0ba6a5cf4dc59",
+    "url": "/codelearn/static/css/main.875a0652.chunk.css"
   },
   {
-    "revision": "971f7ec330ae8bafd26f",
-    "url": "/codelearn/static/js/2.c8288c7e.chunk.js"
+    "revision": "89d07c5220380f23cbe4",
+    "url": "/codelearn/static/js/2.f79f8ef2.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/codelearn/static/js/2.c8288c7e.chunk.js.LICENSE.txt"
+    "url": "/codelearn/static/js/2.f79f8ef2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1e305dee79f7aa005221",
-    "url": "/codelearn/static/js/main.16ddb309.chunk.js"
+    "revision": "c44e63d0ba6a5cf4dc59",
+    "url": "/codelearn/static/js/main.fa2b9445.chunk.js"
   },
   {
     "revision": "3db2b9c21281bad56a79",
     "url": "/codelearn/static/js/runtime-main.12eb3cbd.js"
   },
   {
+    "revision": "f1e87ad5f72cc43b78e78c5ce92ce577",
+    "url": "/codelearn/static/media/bg-statistic.f1e87ad5.png"
+  },
+  {
     "revision": "9a00a181162025f4f3fd3ffaebcd73fb",
     "url": "/codelearn/static/media/chia-khoa-lap-trinh.9a00a181.png"
+  },
+  {
+    "revision": "5b9e50d35da0a02edf84fd7505259470",
+    "url": "/codelearn/static/media/chung-tri-codelearn.5b9e50d3.png"
   },
   {
     "revision": "a296d0aa23f4624d2b6a75811cc34aa5",

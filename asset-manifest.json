@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/codelearn/static/css/main.84365166.chunk.css",
-    "main.js": "/codelearn/static/js/main.16ddb309.chunk.js",
-    "main.js.map": "/codelearn/static/js/main.16ddb309.chunk.js.map",
+    "main.css": "/codelearn/static/css/main.875a0652.chunk.css",
+    "main.js": "/codelearn/static/js/main.fa2b9445.chunk.js",
+    "main.js.map": "/codelearn/static/js/main.fa2b9445.chunk.js.map",
     "runtime-main.js": "/codelearn/static/js/runtime-main.12eb3cbd.js",
     "runtime-main.js.map": "/codelearn/static/js/runtime-main.12eb3cbd.js.map",
     "static/css/2.bd2f563d.chunk.css": "/codelearn/static/css/2.bd2f563d.chunk.css",
-    "static/js/2.c8288c7e.chunk.js": "/codelearn/static/js/2.c8288c7e.chunk.js",
-    "static/js/2.c8288c7e.chunk.js.map": "/codelearn/static/js/2.c8288c7e.chunk.js.map",
+    "static/js/2.f79f8ef2.chunk.js": "/codelearn/static/js/2.f79f8ef2.chunk.js",
+    "static/js/2.f79f8ef2.chunk.js.map": "/codelearn/static/js/2.f79f8ef2.chunk.js.map",
     "index.html": "/codelearn/index.html",
-    "precache-manifest.6e027f68aa08cd671d1fcf6ae058a5f9.js": "/codelearn/precache-manifest.6e027f68aa08cd671d1fcf6ae058a5f9.js",
+    "precache-manifest.0372b3151f422e455d68ad737795a1f6.js": "/codelearn/precache-manifest.0372b3151f422e455d68ad737795a1f6.js",
     "service-worker.js": "/codelearn/service-worker.js",
     "static/css/2.bd2f563d.chunk.css.map": "/codelearn/static/css/2.bd2f563d.chunk.css.map",
-    "static/css/main.84365166.chunk.css.map": "/codelearn/static/css/main.84365166.chunk.css.map",
-    "static/js/2.c8288c7e.chunk.js.LICENSE.txt": "/codelearn/static/js/2.c8288c7e.chunk.js.LICENSE.txt",
+    "static/css/main.875a0652.chunk.css.map": "/codelearn/static/css/main.875a0652.chunk.css.map",
+    "static/js/2.f79f8ef2.chunk.js.LICENSE.txt": "/codelearn/static/js/2.f79f8ef2.chunk.js.LICENSE.txt",
+    "static/media/StatisticLanding.css": "/codelearn/static/media/bg-statistic.f1e87ad5.png",
     "static/media/chia-khoa-lap-trinh.png": "/codelearn/static/media/chia-khoa-lap-trinh.9a00a181.png",
+    "static/media/chung-tri-codelearn.png": "/codelearn/static/media/chung-tri-codelearn.5b9e50d3.png",
     "static/media/codelearn-logo.svg": "/codelearn/static/media/codelearn-logo.a296d0aa.svg",
     "static/media/head-left-bg.png": "/codelearn/static/media/head-left-bg.0afde786.png",
     "static/media/logo-fpt-footer.svg": "/codelearn/static/media/logo-fpt-footer.2aad0756.svg",
@@ -23,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.12eb3cbd.js",
     "static/css/2.bd2f563d.chunk.css",
-    "static/js/2.c8288c7e.chunk.js",
-    "static/css/main.84365166.chunk.css",
-    "static/js/main.16ddb309.chunk.js"
+    "static/js/2.f79f8ef2.chunk.js",
+    "static/css/main.875a0652.chunk.css",
+    "static/js/main.fa2b9445.chunk.js"
   ]
 }
