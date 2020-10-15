@@ -1,0 +1,23 @@
+.Practice-Header {
+    /* border: 1px solid rgb(235, 237, 240); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    /* background-color: #EBEBEB; */
+    background: linear-gradient(45deg, #eec83d 0%, #86cbcc 100%);
+    /* background: linear-gradient(45deg, #353588 0%, #38acf0 100%); */
+    box-shadow: 0 0 10px #666;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.Practice-Header span {
+    color: #222;
+    font-weight: 700;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background: linear-gradient(45deg, #eec83d 0%, #5fb1e7 100%);
+}

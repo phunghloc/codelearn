@@ -66,7 +66,7 @@ const UlityLanding = () => {
                     <Slider {...settingController}>
                         {slides.map(slide => (
                             <div key={slide.title} className="UlityLanding-Div">
-                                <div className="test1">
+                                <div className="UlityLanding-Info">
                                     <img src={slide.icon} alt={slide.title}/>
                                     <h3>{slide.title}</h3>
                                 </div>

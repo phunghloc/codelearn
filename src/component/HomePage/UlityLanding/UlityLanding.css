@@ -41,7 +41,7 @@
     overflow: hidden;
 }
 
-.test1 {
+.UlityLanding-Info {
     height: 100%;
     width: 80%;
     display: flex;
@@ -52,13 +52,13 @@
     margin-left: 50px;
 }
 
-.test1 h3 {
+.UlityLanding-Info h3 {
     margin-bottom: 0;
     color: #1e266d;
 }
 
 @media (max-width: 576px) {
-    .test1 {
+    .UlityLanding-Info {
         margin-left: 3%;
         width: 93%;
     }
@@ -70,7 +70,7 @@
     margin: auto 12px;
 }
 
-.slick-current .test1 {
+.slick-current .UlityLanding-Info {
     background-color: #FFFFFF;
 }
 

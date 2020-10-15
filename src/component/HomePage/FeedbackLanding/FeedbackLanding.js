@@ -15,8 +15,8 @@ const contents = [
     },
     {
         img: img2,
-        name: "Phùng Hữu Lộc",
-        role: "Lập trình viên",
+        name: "Cheems",
+        role: "The Doge",
         comment: "Cháu rất thích học tập tại CodeLearn. Không chỉ có các khóa học phù hợp với cháu, các bài tập cũng đa dạng, phần bài giải mẫu cũng rất chi tiết. Cháu cảm thấy mình đã tiến bộ rất nhiều và mong muốn trong tương lai có thể trở thành một lập trình viên giỏi"
     },
     {

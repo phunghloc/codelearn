@@ -10,10 +10,12 @@
 .RegisterContent-Left {
     padding: 0 2%;
     min-height: 300px;
+    display: flex;
 }
 
 .RegisterContent img {
     width: 90%;
+    margin: auto;
 }
 
 .RegisterContent-Title {

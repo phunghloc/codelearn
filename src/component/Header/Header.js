@@ -8,15 +8,18 @@ import SideDraw from '../SideDraw/SideDraw';
 const Header = () => {
     useEffect(() => {
         window.onscroll = () => {
-            if (window.scrollY) {
-                document.querySelector('.Header-Header').classList.remove('Header-Header-Idle');
-                for (const div of document.querySelectorAll('.SideDrawMenu div')) {
-                    div.classList.add('SideDrawMenu-div-idle');
-                }
-            } else {
-                document.querySelector('.Header-Header').classList.add('Header-Header-Idle');
-                for (const div of document.querySelectorAll('.SideDrawMenu div')) {
-                    div.classList.remove('SideDrawMenu-div-idle');
+            const headerHomePage = document.querySelector('.Header-Header');
+            if (headerHomePage) {
+                if (window.scrollY) {
+                    headerHomePage.classList.remove('Header-Header-Idle');
+                    for (const div of document.querySelectorAll('.SideDrawMenu div')) {
+                        div.classList.add('SideDrawMenu-div-idle');
+                    }
+                } else {
+                    headerHomePage.classList.add('Header-Header-Idle');
+                    for (const div of document.querySelectorAll('.SideDrawMenu div')) {
+                        div.classList.remove('SideDrawMenu-div-idle');
+                    }
                 }
             }
         }

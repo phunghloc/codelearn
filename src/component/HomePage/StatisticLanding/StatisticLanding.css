@@ -37,7 +37,8 @@
     width: 48px;
     box-sizing: border-box;
     position: absolute;
-    border: 3px white solid;
+    height: 6px;
+    background-color: white;
     border-radius: 10px;
     top: 42px;
     left: 53px;

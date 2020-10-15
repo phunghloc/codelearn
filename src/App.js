@@ -1,24 +1,20 @@
 import React from 'react';
-import { Layout } from 'antd';
-// import { Switch } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import './App.css';
-import FooterHM from './component/Footer/Footer';
-import HeaderHM from './component/Header/Header';
 import HomePage from './component/HomePage/HomePage';
+import Practice from './container/Practice/Practice';
 
 function App() {
   return (
-    // <Switch>
-      <Layout className="Layout-Layout">
-        <HeaderHM />
+    <Switch>
+      <Route path="/" exact component={HomePage} />
 
-        <HomePage />
+      <Route path="/codelearn/practice" component={Practice}/>
 
-        <FooterHM />
-      </Layout>
+      <Route path="/codelearn" exact component={HomePage} />
 
-    // </Switch>
+    </Switch>
   );
 
 }
