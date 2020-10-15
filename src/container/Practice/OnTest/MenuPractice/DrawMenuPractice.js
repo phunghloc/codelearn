@@ -20,7 +20,7 @@ const DrawMenuPractice = (props) => {
                 onClick={showDrawer} 
                 className="Menu-Btn"
             >
-                Show List
+                List
             </div>
             <Drawer
                 placement={'left'}

@@ -1,0 +1,27 @@
+.Result-Form .Question-Ans:hover {
+    border-color: #d9d9d9;
+    cursor: default;
+}
+
+.Result-Form .Question-Ans:hover p {
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.Question-Ans-Wrong {
+    background-color:#f5222d;
+}
+
+.Question-Ans-Wrong p,
+.Question-Ans-Correct p {
+    color: white;
+    font-weight: 700;
+}
+
+.Question-Ans-Correct {
+    background-color: #52c41a;
+}
+
+.Result-Form .Question-Ans-Wrong:hover p,
+.Result-Form .Question-Ans-Correct:hover p {
+    color: white;
+}

@@ -1,0 +1,19 @@
+.Notice {
+    margin: 18px 0 0 200px;
+    text-align: center;
+}
+
+.Notice h1 {
+    margin-bottom: 0;
+}
+
+.Notice h1 span:first-child {
+    color: #52c41a;
+    font-size: 40px;
+}
+
+@media (max-width: 768px) {
+    .Notice {
+        margin-left: 0;
+    }
+}

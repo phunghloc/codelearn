@@ -1,0 +1,18 @@
+.ant-menu:not(.ant-menu-horizontal) .Menu-Result.ant-menu-item-selected {
+    background: none;
+    color: white;
+}
+
+.Menu-Item-Wrong {
+    color: crimson;
+}
+
+.Menu-Item-Correct {
+    color: rgb(19, 141, 59);
+}
+
+@media (max-width: 768px) {
+    .Menu-Btn {
+        top: 130px;
+    }
+}

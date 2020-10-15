@@ -24,7 +24,7 @@
     position: fixed;
     left: 0;
     top: 20%;
-    transform: rotate(90deg) translateY(100%);
+    transform: rotate(90deg) translateY(10px);
     background: linear-gradient(45deg, #108ee9 0%, #87d068 100%);
     padding: 4px 12px;
     font-size: 16px;
@@ -49,5 +49,11 @@
     .Menu-Drawer,
     .Menu-Btn {
         display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .Menu-Btn {
+        top: 140px;
     }
 }

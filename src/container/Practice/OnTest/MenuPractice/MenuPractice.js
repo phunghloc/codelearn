@@ -5,10 +5,6 @@ import { MinusOutlined, CheckOutlined } from '@ant-design/icons';
 import './MenuPractice.css';
 
 const MenuPractice = (props) => {
-    const changeQuestion = (index) => {
-        props.change(index);
-    }
-
     return (
         <Menu 
             className="Menu-Menu Menu-Hide"
@@ -18,7 +14,7 @@ const MenuPractice = (props) => {
             {Array(props.list.length).fill(1).map((value, index)=> (
                 <Menu.Item 
                     key={index}
-                    onClick={item => changeQuestion(item.key - '')}
+                    onClick={item => props.change(item.key - '')}
                     icon={props.list[index] ? <CheckOutlined /> : <MinusOutlined />}
                     className="Menu-Item"
                 >Bài {index + 1}</Menu.Item>

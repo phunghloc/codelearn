@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'antd';
-import { Link } from 'react-router-dom'
+import {LeftOutlined, RightOutlined} from '@ant-design/icons';
 
 import './Ulity.css';
 
@@ -12,21 +12,21 @@ const ulity = (props) => (
                 size="large"
                 onClick={() => props.change(props.current - 1)}
                 disabled={!props.current}
-            >Bài trước</Button>
+            ><LeftOutlined/> Bài trước</Button>
             <Button 
                 type="primary" 
                 size="large"
                 onClick={() => props.change(props.current + 1)}
                 disabled={props.current === props.maxQuestion}
-            >Bài tiếp </Button>
+            >Bài tiếp <RightOutlined/></Button>
         </div>
-
-        <Link to="/codelearn">
-            <Button type="primary" 
-                size="large"
-                disabled={!props.isDone}
-                >Nộp bài</Button>
-        </Link>
+        
+        <Button type="primary" 
+            size="large"
+            disabled={!props.isDone}
+            onClick={props.sendAnswer}
+            >Nộp bài</Button>
+        
     </div>
 );
 

@@ -1,0 +1,5 @@
+export const ON_FETCH_DATA = "ON_FETCH_DATA";
+export const ON_FETCH_DATA_SUCCESS = "ON_FETCH_DATA_SUCCESS";
+export const ON_FETCH_DATA_FAIL = "ON_FETCH_DATA_FAIL";
+
+export const SEND_ANSWERS = "SEND_ANSWERS";
