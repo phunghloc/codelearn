@@ -16,7 +16,8 @@
     height: 48px;
 }
 
-.Ulity button:not(:disabled) {
+.Ulity button:not(:disabled),
+.UlityCreate button:not(:disabled){
     animation: notDisable 0.3s linear;
 }
 

@@ -7,11 +7,13 @@ import GetResult from './GetResult/GetResult';
 import Loading from '../../component/Loading/Loading';
 
 const IndexPractice = (props) => {
+    const { onFetchData } = props;
     useEffect(() => {
-        setTimeout(props.onFetchData, 1000);
-    });
+        console.log('useEffect IndexPractice.js');
+        onFetchData();
+    }, [onFetchData]);
 
-    if (!props.questions) return <Loading />;
+    if (props.loading || !props.questions) return <Loading />;
     
     if (props.answers) return <GetResult {...props} />
 
@@ -20,6 +22,7 @@ const IndexPractice = (props) => {
 
 const mapStateToProps = state => {
     return {
+        loading: state.questions.loading,
         questions: state.questions.questions,
         answers: state.answers.answers,
     }

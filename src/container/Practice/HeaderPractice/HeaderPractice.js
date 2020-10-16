@@ -1,15 +1,30 @@
 import React from 'react';
 import { PageHeader } from 'antd';
+import { connect } from 'react-redux';
+import * as actions from '../../../store/actions/actions';
 
 import './HeaderPractice.css';
 
-const headerPractice = (props) => (
-    <PageHeader
-        className="Practice-Header"
-        onBack={props.back}
-        title={props.title}
-        subTitle={props.subTitle}
-    />
-);
+const headerPractice = (props) => {
+    const clearDataAndGoBack = () => {
+        props.onClearData();
+        props.back();
+    }
 
-export default headerPractice;
+    return (
+        <PageHeader
+            className="Practice-Header"
+            onBack={clearDataAndGoBack}
+            title={props.title}
+            subTitle={props.subTitle}
+        />
+    );
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onClearData: () => dispatch(actions.onClearData()),
+    }
+}
+
+export default connect(null, mapDispatchToProps)(headerPractice);

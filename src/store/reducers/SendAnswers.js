@@ -8,11 +8,24 @@ const initialState = {
 
 const reducers = (state = initialState, action) => {
     switch(action.type) {
+        // case actionTypes.ON_FETCH_DATA:
+        //     return {
+        //         ...state,
+        //         answers: null,
+        //     }
+
+        case actionTypes.ON_CLEAR_DATA: 
+            return {
+                ...state,
+                answers: null,
+            }
+
         case actionTypes.SEND_ANSWERS:
             return {
                 ...state,
                 answers: action.answers,
             }
+
         default:
             return {
                 ...state,

@@ -9,13 +9,13 @@ const ulityResult = (props) => (
                 size="large"
                 onClick={() => props.change(props.current - 1)}
                 disabled={!props.current}
-            ><LeftOutlined/> Bài trước</Button>
+            > <LeftOutlined/> </Button>
             <Button 
                 type="primary" 
                 size="large"
                 onClick={() => props.change(props.current + 1)}
                 disabled={props.current === props.maxQuestion}
-            >Bài tiếp <RightOutlined/></Button>
+            > <RightOutlined/> </Button>
 
     </div>
 );

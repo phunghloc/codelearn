@@ -1,5 +1,6 @@
 export {
     onFetchData,
+    onClearData,
 } from './GetDetailTest';
 
 export {

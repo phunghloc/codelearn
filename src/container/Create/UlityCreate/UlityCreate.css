@@ -1,0 +1,71 @@
+.UlityCreate {
+    margin-left: 200px;
+    padding: 12px;
+}
+
+.UlityCreate-Btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin-bottom: 16px;
+}
+
+.UlityCreate-Btn button {
+    margin: 0 6px;
+    padding: 4px 20px;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
+}
+
+.UlityCreate-Btn button svg {
+    font-size: 24px;
+}
+
+.UlityCreate-Btn-Delete, 
+.UlityCreate-Btn-Add {
+    padding: 4px 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.UlityCreate-Btn-Delete:disabled {
+    background-color: #F5F5F5;
+    color: #CCCCCC;
+    border: 1px #ddd solid;
+}
+
+.UlityCreate-Btn-Delete:disabled:hover {
+    background-color: #F5F5F5;
+    cursor: not-allowed;
+}
+
+.UlityCreate-Btn-Delete {
+    background-color: #f5222d;
+}
+
+.UlityCreate-Btn-Delete:hover {
+    background-color: #ff4d4f;
+}
+
+.UlityCreate-Btn-Add {
+    background-color: #52c41a;
+}
+
+.UlityCreate-Btn-Add:hover {
+    background-color: #73d13d;
+}
+
+@media (max-width: 768px) {
+    .UlityCreate {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .UlityCreate-Btns {
+        padding: 0;
+    }
+}
+

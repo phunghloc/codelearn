@@ -1,0 +1,51 @@
+.QuestionCreate {
+    margin-left: 200px;
+    padding: 12px;
+}
+
+.QuestionCreate-Ans h2 {
+    margin: 12px 0;
+}
+
+.QuestionCreate-Add-Btn {
+    width: 100%;
+    height: 48px;
+    font-size: 20px;
+    border-color: #bbb;
+}
+
+.QuestionCreate-Input {
+    display: flex;
+    position: relative;
+}
+
+.QuestionCreate-Ans textarea {
+    margin-bottom: 20px;
+    width: 99%;
+}
+
+.QuestionCreate-Input-Delete {
+    width: auto;
+    height: 34px;
+    background-color: #f5222d;
+    position: absolute;
+    right: calc(1% - 17px);
+    top: -17px;
+    border-radius: 50%;
+    outline: none;
+    border-color: transparent;
+    color: white;
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+}
+
+.QuestionCreate-Input:hover .QuestionCreate-Input-Delete {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .QuestionCreate {
+        margin-left: 0;
+    }
+}

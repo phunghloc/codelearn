@@ -1,0 +1,14 @@
+.GeneralInfo {
+    margin-left: 200px;
+    padding: 12px;
+}
+
+.GeneralInfo input {
+    margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+    .GeneralInfo {
+        margin-left: 0;
+    }
+}

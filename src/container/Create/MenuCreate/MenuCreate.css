@@ -1,0 +1,17 @@
+.Menu-Create button {
+    padding: 8px;
+    height: 54px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #29A745;
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.Menu-Create button:hover {
+    background-color: #3cbe58;
+}
+

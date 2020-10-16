@@ -22,17 +22,33 @@
 .Menu-Btn {
     display: none;
     position: fixed;
-    left: 0;
+    /* left: 0;
     top: 20%;
-    transform: rotate(90deg) translateY(10px);
-    background: linear-gradient(45deg, #108ee9 0%, #87d068 100%);
+    transform: rotate(90deg) translateY(10px); */
+    /* background: linear-gradient(45deg, #108ee9 0%, #87d068 100%); */
     padding: 4px 12px;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 700;
     color: white;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
     cursor: pointer;
+    color: black;
+    right: 0;
+    z-index: 100;
+    animation: MenuEffect 2s ease infinite;
+}
+
+@keyframes MenuEffect {
+    0% {
+        transform: translateY(-122px) scale(1);
+    }
+    50% {
+        transform: translateY(-122px) scale(1.2);
+    }
+    100% {
+        transform: translateY(-122px) scale(1);
+    }
 }
 
 .Menu-Item {
