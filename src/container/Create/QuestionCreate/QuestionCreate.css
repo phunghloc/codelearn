@@ -21,17 +21,15 @@
     padding: 10px 0;
 }
 
-.QuestionCreate-CheckBox {
-    margin: auto;
-}
-
-.QuestionCreate-CheckBox input:checked ~ span {
-    background-color: green;
-}
-
 .QuestionCreate-Ans textarea {
     margin: 0 auto;
-    width: 98%;
+    /* width: 85%; */
+}
+
+.QuestionCreate-CheckBox {
+    width: 48px;
+    /* background-color: violet; */
+    display: flex;
 }
 
 .QuestionCreate-Input-Delete {
@@ -39,8 +37,8 @@
     height: 34px;
     background-color: #f5222d;
     position: absolute;
-    right:  -10px;
-    top: -10px;
+    right:  -12px;
+    top: -8px;
     border-radius: 50%;
     outline: none;
     border-color: transparent;
@@ -48,6 +46,7 @@
     font-size: 18px;
     display: none;
     cursor: pointer;
+    margin: auto;
 }
 
 .QuestionCreate-Input:hover .QuestionCreate-Input-Delete {
@@ -60,15 +59,35 @@
     }
 }
 
-.QuestionCreate-Input-Correct {
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    border: 2px green solid;
+.QuestionCreate-CheckBox-Btn {
+    padding: 0;
+    margin: auto;
+    color: white;
+    outline: none;
     background-color: white;
-    left: calc(1% - 17px);
-    top: -17px;
-    border-radius: 50%;
-    z-index: 1000;
+    border: none;
+    width: 32px;
     cursor: pointer;
+    border: 1px #ccc solid;
+    border-radius: 3px;
+}
+
+.QuestionCreate-CheckBox-Btn svg {
+    width: 28px;
+    height: 28px;
+    transform: translate(0px, 2px);
+}
+
+.QuestionCreate-CheckBox-Correct {
+    border-color: green;
+    color: green;
+}
+
+.QuestionCreate-CheckBox-Btn:hover {
+    border-color: green;
+    color: white;
+}
+
+.QuestionCreate-CheckBox-Correct:hover {
+    color: green;
 }

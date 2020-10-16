@@ -7,6 +7,21 @@
     margin-left: 8px;
 }
 
+.GeneralInfo-Container {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0 16px;
+}
+
+.GeneralInfo-Container h1 {
+    margin: auto;
+    flex: 1;
+}
+
+.GeneralInfo-Container button {
+    margin: auto;
+}
+
 @media (max-width: 768px) {
     .GeneralInfo {
         margin-left: 0;

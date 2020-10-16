@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import { Layout, PageHeader } from 'antd';
+import React, { useState, useEffect } from 'react';
+import { Layout, PageHeader, notification } from 'antd';
+import { LoadingOutlined, CheckOutlined, ExclamationCircleOutlined } from '@ant-design/icons'
+import { connect } from 'react-redux';
 
 import './Create.css';
 import MenuCreate from './MenuCreate/MenuCreate';
@@ -7,6 +9,7 @@ import GeneralInfo from './GeneralInfo/GeneralInfo';
 import UlityCreate from './UlityCreate/UlityCreate';
 import QuestionCreate from './QuestionCreate/QuestionCreate';
 import DrawMenuCreate from './MenuCreate/DrawMenuCreate';
+import * as actions from '../../store/actions/actions';
 
 const template = {
     type: 'radio',
@@ -15,7 +18,60 @@ const template = {
     correct: '',
 }
 
+const key = 'updatable';
+
 const Create = (props) => {
+    // * ClearData khi load vào component
+    const { clearData } = props;
+    useEffect(() => {
+        clearData();
+        // notification.open({
+        //     message: 'Notification Title',
+        //     key,
+        //     icon: <ExclamationCircleOutlined style={{ color: 'red' }} />,
+        //   });
+    }, [clearData]);
+
+    useEffect(() => {
+        if (props.loading) {
+            notification.open({
+                message: 'Đang gửi!',
+                key,
+                icon: <LoadingOutlined style={{ color: '#108ee9' }} />,
+                duration: 0,
+              });
+        }
+        if (props.error) {
+            notification.open({
+                message: 'Đã có lỗi xảy ra!',
+                key,
+                icon: <ExclamationCircleOutlined style={{ color: 'red' }} />,
+                duration: 0,
+              });
+        }
+        if (props.isSend) {
+            notification.open({
+                message: 'Đã gửi thành công!',
+                key,
+                icon: <CheckOutlined style={{ color: 'green' }} />,
+                duration: 5,
+            });
+        }
+    }, [props.loading, props.error, props.isSend]);
+
+    const sendDataHandler = () => {
+        if (props.isSend) {
+            notification.open({
+                message: 'Bạn đã gửi bài tập thành công rồi!',
+                key,
+                icon: <ExclamationCircleOutlined style={{ color: 'red' }} />,
+                duration: 0,
+              });
+        } else {
+            props.sendPracticeToServer(list, title);
+        }
+    }
+
     // TODO: List bài tập
     const [list, setList] = useState([{...template, answers: ['', '']}]);
 
@@ -100,6 +156,7 @@ const Create = (props) => {
 
     // * Gán đáp án đúng cho câu hỏi đó
     const setCorrectAnswerInQuestionHandler = (answer) => {
+        if (!answer) return ;
         const newList = [...list];
         newList[index].correct = answer;
         setList(newList);
@@ -132,6 +189,8 @@ const Create = (props) => {
                 <GeneralInfo 
                     titleChange={titleChangeHandler}
                     title={title}
+                    isDone={!menuList.some(item => !item) && menuList.length >= 5}
+                    sendData={sendDataHandler}
                 />
         
                 <UlityCreate 
@@ -162,4 +221,19 @@ const Create = (props) => {
     );
 }
 
-export default Create;
+const mapStateToProps = state => {
+    return {
+        loading: state.sendPractice.loading,
+        error: state.sendPractice.error,
+        isSend: state.sendPractice.isSend,
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        sendPracticeToServer: (data, title) => dispatch(actions.onSendPractice(data, title)),
+        clearData: () => dispatch(actions.onClearData()),
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Create);

@@ -5,4 +5,8 @@ export {
 
 export {
     onSendAnswers,
-} from './SendAnswers'
+} from './SendAnswers';
+
+export {
+    onSendPractice,
+} from './SendPractice';

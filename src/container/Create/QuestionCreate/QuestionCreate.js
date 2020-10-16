@@ -3,9 +3,8 @@ import {
     Input, 
     Button, 
     Modal,
-    Checkbox
  } from 'antd';
-import { PlusOutlined, DeleteOutlined } from '@ant-design/icons';
+import { PlusOutlined, CloseOutlined, CheckOutlined } from '@ant-design/icons';
 
 import './QuestionCreate.css';
 
@@ -43,11 +42,13 @@ const QuestionCreate = (props) => {
                 <h2>Các đáp án:</h2>
                 {props.answers.map((answer, index) => (
                     <div className="QuestionCreate-Input" key={index}>
-                        <Checkbox 
-                            className="QuestionCreate-CheckBox" 
-                            onChange={() => props.setCorrectAnswer(answer)}
-                            checked={answer === props.currentCorrect && answer}
-                            />
+                            <div className="QuestionCreate-CheckBox">
+                                <button
+                                    className={["QuestionCreate-CheckBox-Btn", answer === props.currentCorrect && answer ? "QuestionCreate-CheckBox-Correct" : null].join(' ')}
+                                    onClick={() => props.setCorrectAnswer(answer)}
+                                ><CheckOutlined />
+                                </button> 
+                            </div>
 
                         <Input.TextArea
                             value={answer}
@@ -59,7 +60,7 @@ const QuestionCreate = (props) => {
                             className="QuestionCreate-Input-Delete"
                             onClick={() => validatedAction(index)}
                         >
-                            <DeleteOutlined />
+                            <CloseOutlined />
                         </button>
                         {/* <div className="QuestionCreate-Input-Correct"></div> */}
                     </div>
@@ -74,7 +75,6 @@ const QuestionCreate = (props) => {
                     Thêm đáp án
                 </Button>
             </div>
-
         </div>
     );
 }

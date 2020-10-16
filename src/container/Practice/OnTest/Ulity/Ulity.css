@@ -17,7 +17,8 @@
 }
 
 .Ulity button:not(:disabled),
-.UlityCreate button:not(:disabled){
+.UlityCreate button:not(:disabled),
+.GeneralInfo-Container button:not(:disabled) {
     animation: notDisable 0.3s linear;
 }
 

@@ -10,10 +10,12 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import GetDetailTestReducer from './store/reducers/GetDetailTest';
 import SendAnswersReducer from './store/reducers/SendAnswers';
+import SendPracticeReducer from './store/reducers/SendPractice';
 
 const rootReducers = combineReducers({
   questions: GetDetailTestReducer,
   answers: SendAnswersReducer,
+  sendPractice: SendPracticeReducer,
 });
 
 const store = createStore(rootReducers, applyMiddleware(thunk));
