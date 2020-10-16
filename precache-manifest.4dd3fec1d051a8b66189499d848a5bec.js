@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e33e14ed18a39d04b1573fecd5ef9a61",
+    "revision": "4b82b41d910a073c6bd1491c46577a1a",
     "url": "/codelearn/index.html"
   },
   {
-    "revision": "aa8dc16d18bdef18b47e",
+    "revision": "51c70517f9a2838640a4",
     "url": "/codelearn/static/css/2.bd2f563d.chunk.css"
   },
   {
-    "revision": "a4d5f6ca51e5205015f2",
-    "url": "/codelearn/static/css/main.c572e4cd.chunk.css"
+    "revision": "6fc2b4c842ce9c856b6e",
+    "url": "/codelearn/static/css/main.1679610f.chunk.css"
   },
   {
-    "revision": "aa8dc16d18bdef18b47e",
-    "url": "/codelearn/static/js/2.8bd0cee7.chunk.js"
+    "revision": "51c70517f9a2838640a4",
+    "url": "/codelearn/static/js/2.f34fa8e3.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/codelearn/static/js/2.8bd0cee7.chunk.js.LICENSE.txt"
+    "url": "/codelearn/static/js/2.f34fa8e3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a4d5f6ca51e5205015f2",
-    "url": "/codelearn/static/js/main.36578075.chunk.js"
+    "revision": "6fc2b4c842ce9c856b6e",
+    "url": "/codelearn/static/js/main.9ee1c457.chunk.js"
   },
   {
     "revision": "3db2b9c21281bad56a79",
