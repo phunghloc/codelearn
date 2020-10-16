@@ -6,6 +6,7 @@ import MenuCreate from './MenuCreate/MenuCreate';
 import GeneralInfo from './GeneralInfo/GeneralInfo';
 import UlityCreate from './UlityCreate/UlityCreate';
 import QuestionCreate from './QuestionCreate/QuestionCreate';
+import DrawMenuCreate from './MenuCreate/DrawMenuCreate';
 
 const template = {
     type: 'radio',
@@ -27,7 +28,21 @@ const Create = (props) => {
     // TODO: con trỏ cho câu hiện tại
     const [index, setIndex] = useState(0);
 
-    // * Thêm xóa câu hỏi
+    //* Validate từng câu 
+    const validateHandler = () => {
+        const newMenuList = [...menuList];
+
+        if (!list[index].detail || list[index].answers.some(answer => !answer) || !list[index].correct) {
+            newMenuList[index] = false;
+        }
+        else {
+            newMenuList[index] = true;
+        }
+
+        setMenuList(newMenuList);
+    }
+
+    // * Thêm / xóa câu hỏi
     const addQuestionHandler = () => {
         setMenuList(menuList => menuList.concat(false));
         setList(list => list.concat({...template, answers: ['', '']}));
@@ -49,6 +64,7 @@ const Create = (props) => {
     // * Thay đổi tiêu đề bài tập
     const titleChangeHandler = (value) => {
         setTitle(value);
+        validateHandler();
     }
 
     // * Thay đổi nội dung từng câu hỏi
@@ -56,6 +72,7 @@ const Create = (props) => {
         const newList = [...list];
         newList[index].detail = detail;
         setList(newList);
+        validateHandler();
     }
 
     // * Thêm 1 đáp án vào câu hỏi đang được chọn
@@ -63,6 +80,7 @@ const Create = (props) => {
         const newList = [...list];
         newList[index].answers.push('');
         setList(newList);
+        validateHandler();
     }
 
     // * Xóa 1 đáp án vào câu hỏi đang được chọn
@@ -77,7 +95,16 @@ const Create = (props) => {
         const newList = [...list];
         newList[index].answers[indexAnswer] = value;
         setList(newList);
+        validateHandler();
     } 
+
+    // * Gán đáp án đúng cho câu hỏi đó
+    const setCorrectAnswerInQuestionHandler = (answer) => {
+        const newList = [...list];
+        newList[index].correct = answer;
+        setList(newList);
+        validateHandler();
+    }
 
     return (
         <Layout.Content className="Practice-Container">
@@ -89,6 +116,13 @@ const Create = (props) => {
                 />
 
                 <MenuCreate 
+                    list={menuList}
+                    current={index}
+                    change={setIndex}
+                    add={addQuestionHandler}
+                />
+
+                <DrawMenuCreate 
                     list={menuList}
                     current={index}
                     change={setIndex}
@@ -115,10 +149,12 @@ const Create = (props) => {
                     index={index}
                     detail={list[index].detail}
                     answers={list[index].answers}
+                    currentCorrect={list[index].correct}
                     changeDetail={detailChangeHandler}
                     addAnswer={addAnswerToQuestionHandler}
                     deleteAnswer={deleteAnswerInQuestionHandler}
                     changeAnswer={changeAnswerInQuestionHandler}
+                    setCorrectAnswer={setCorrectAnswerInQuestionHandler}
                 />
             </div>
         </Layout.Content>

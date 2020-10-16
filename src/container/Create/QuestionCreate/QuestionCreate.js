@@ -1,5 +1,10 @@
 import React from 'react';
-import { Input, Button, Modal } from 'antd';
+import { 
+    Input, 
+    Button, 
+    Modal,
+    Checkbox
+ } from 'antd';
 import { PlusOutlined, DeleteOutlined } from '@ant-design/icons';
 
 import './QuestionCreate.css';
@@ -38,6 +43,12 @@ const QuestionCreate = (props) => {
                 <h2>Các đáp án:</h2>
                 {props.answers.map((answer, index) => (
                     <div className="QuestionCreate-Input" key={index}>
+                        <Checkbox 
+                            className="QuestionCreate-CheckBox" 
+                            onChange={() => props.setCorrectAnswer(answer)}
+                            checked={answer === props.currentCorrect && answer}
+                            />
+
                         <Input.TextArea
                             value={answer}
                             onChange={event => props.changeAnswer(index, event.target.value)}
@@ -50,7 +61,7 @@ const QuestionCreate = (props) => {
                         >
                             <DeleteOutlined />
                         </button>
-
+                        {/* <div className="QuestionCreate-Input-Correct"></div> */}
                     </div>
                 ))}
 

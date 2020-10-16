@@ -13,7 +13,7 @@ const menu = (props) => (
         <button 
             onClick={props.add}
         >
-        <PlusOutlined /> Tạo bài tập mới
+            <PlusOutlined /> Tạo bài tập mới
         </button>
 
         {props.list.map((value, index)=> (
