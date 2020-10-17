@@ -1,0 +1,81 @@
+.BannerPractice {
+    .BannerPractice-Item {
+        box-shadow: 0 0 8px #bbb;
+    }
+    
+    .BannerPractice-Banner-Img {
+        height: 242px;
+        background: linear-gradient(90deg, #23599F 0%, #1F3C66 100%);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        img {
+            margin: auto;
+            max-width: 100%;
+            height: 100%;
+        }
+
+        .BannerPractice-Banner-Title {
+            display: flex;
+            margin: auto;
+        }
+
+        h3 {
+            margin-right: 6px;
+            margin-bottom: 0;
+            color: white;
+        }
+
+        h3:hover {
+            text-decoration: underline;
+        }
+
+        .Bn-Badge {
+            background-color: limegreen;
+            padding: 2px 8px;
+            color: white;
+            border-radius: 12px;
+            display: flex;
+
+
+            p {
+                margin-bottom: 0;
+                font-size: 12px;
+            }
+        }
+
+        span {
+            margin: auto;
+        }
+
+        p {
+            margin: auto;
+            color: white;
+        }
+
+        .BannerPractice-Item-Bottom {
+            width: 168px;
+            background-color: #EE4035;
+            color: white;
+            margin: auto;
+            height: 40px;
+            text-align: center;
+            display: flex;
+            p {
+                margin: auto;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .BannerPractice-Banner-Info {
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    
+}

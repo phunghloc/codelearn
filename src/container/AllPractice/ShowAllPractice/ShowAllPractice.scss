@@ -1,0 +1,55 @@
+.AllPractice-Items {
+    .AllPractice-Item {
+        min-height: 240px;
+        width: 100%;
+        display: flex;
+        background-color: white;
+        box-shadow: 0 0 5px #ccc;
+        flex-direction: column;
+        border-radius: 5px;
+        overflow: hidden;
+
+        .AllPractice-Container {
+            text-align: center;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding-top: 12px;
+            text-overflow: ellipsis;
+            
+            h3 {
+                margin: auto;
+                text-align: center;
+                width: 100%;
+            }
+
+            .AllPractice-Container-Tag {
+                background-color: #EBEBEB;
+                width: 60px;
+                margin: auto;
+                border-radius: 5px;
+                p {
+                    margin-bottom: 0;
+                    color: #898989;
+                }
+            }
+
+            span {
+                margin: auto;
+            }
+            p {
+                color: #333333;
+            }
+        }
+
+        .AllPractice-Footer {
+            height: 30px;
+            background: #F5F6F7;
+        }
+    }
+
+    a:hover .AllPractice-Item{
+        transform: scale(1.03);
+    }
+}

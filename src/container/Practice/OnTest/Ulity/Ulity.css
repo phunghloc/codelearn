@@ -22,6 +22,13 @@
     animation: notDisable 0.3s linear;
 }
 
+.Ulity button:disabled,
+.UlityCreate button:disabled,
+.GeneralInfo-Container button:disabled {
+    transition: all 0.2s linear;
+}
+
+
 @keyframes notDisable {
     0% {
         transform: scale(1);

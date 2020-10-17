@@ -18,7 +18,7 @@ const content = () => {
     window.scrollTo(0, 0);
     return (
         <Layout>
-            <HeaderHM />
+            <HeaderHM addInClass="Header-HomePage" />
 
             <Layout.Content>
                 <RegisterContent />

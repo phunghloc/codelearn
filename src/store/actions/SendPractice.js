@@ -2,9 +2,9 @@ import * as actionTypes from './actionTypes';
 
 const axios = require('axios');
 
-const url = 'https://my-burger-phl.firebaseio.com/';
+const url = 'https://my-burger-phl.firebaseio.com';
 
-export const onSendPractice = (data, title) => {
+export const onSendPractice = (data, title, tag) => {
     console.log(data, title);
     return dispatch => {
         dispatch({ 
@@ -15,6 +15,7 @@ export const onSendPractice = (data, title) => {
             .then(res => {
                 const titlePackage = {
                     title: title,
+                    tag: tag,
                     id: res.data.name,
                 }
                 axios.post(url + '/alltitle.json', titlePackage)

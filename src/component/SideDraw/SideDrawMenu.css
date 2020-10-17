@@ -15,14 +15,6 @@
     transition: all 0.3s linear;
 }
 
-.SideDrawMenu-div-idle {
-    border-color: white;
-}
-
-/* .SideDrawMenu-Close {
-    margin-right: 17px;
-} */
-
 .SideDrawMenu-Close div:nth-child(1) {
     transform: translateY(13px) rotate(135deg);
 }

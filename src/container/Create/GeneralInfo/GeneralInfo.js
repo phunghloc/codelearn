@@ -1,5 +1,12 @@
 import React from 'react';
-import { Input, Button, Tooltip } from 'antd';
+import { 
+    Input,
+    Button,
+    Tooltip,
+    Select,
+    Row,
+    Col,
+} from 'antd';
 import { FormOutlined, UploadOutlined } from '@ant-design/icons';
 
 import './GeneralInfo.css';
@@ -24,14 +31,32 @@ const generalInfo = (props) => (
                 </Button>
             </Tooltip>
         </div>
-        <h3>Tên bài tập:</h3>
-        <Input 
-            size="large" 
-            value={props.detail}
-            placeholder="Nhập tiêu đề bài tập"
-            prefix={<FormOutlined />} 
-            onChange={event => props.titleChange(event.target.value)}
-        />
+
+        <Row>
+            <Col md={18} sm={24}>
+                <h3>Tên bài tập:</h3>
+                <Input 
+                    // size="large" 
+                    value={props.detail}
+                    placeholder="Nhập tiêu đề bài tập"
+                    prefix={<FormOutlined />} 
+                    onChange={event => props.titleChange(event.target.value)}
+                />
+            </Col>
+
+            <Col md={6} sm={24}>
+                <h3>Tên môn:</h3>
+                <Select 
+                    placeholder="Chọn tên môn" 
+                    style={{ width: '100%', fontSize:'18px', margin: '0 2px', }} 
+                    size="large" 
+                    onChange={value => props.tagChange(value)}
+                >
+                    <Select.Option value="Anh Văn">Anh Văn</Select.Option>
+                    <Select.Option value="Khác">Khác</Select.Option>
+                </Select>
+            </Col>
+        </Row>
     </div>
 )
 

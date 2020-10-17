@@ -8,10 +8,17 @@ import Loading from '../../component/Loading/Loading';
 
 const IndexPractice = (props) => {
     const { onFetchData } = props;
+
     useEffect(() => {
-        console.log('useEffect IndexPractice.js');
-        onFetchData();
-    }, [onFetchData]);
+        const params = props.location.search.slice(1).split('&');
+        const list = {};
+        for (const param of params) {
+            const [key, value] = param.split('=');
+            list[key] = value;
+        }
+        console.log(list['id']);
+        onFetchData(list['id']);
+    }, [onFetchData, props.location.search]);
 
     if (props.loading || !props.questions) return <Loading />;
     
@@ -30,7 +37,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onFetchData: () => dispatch(actions.onFetchData()),
+        onFetchData: (id) => dispatch(actions.onFetchData(id)),
     }
 }
 

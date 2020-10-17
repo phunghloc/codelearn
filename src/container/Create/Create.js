@@ -68,7 +68,7 @@ const Create = (props) => {
                 duration: 0,
               });
         } else {
-            props.sendPracticeToServer(list, title);
+            props.sendPracticeToServer(list, title, tag);
         }
     }
 
@@ -84,11 +84,14 @@ const Create = (props) => {
     // TODO: con trỏ cho câu hiện tại
     const [index, setIndex] = useState(0);
 
+    // TODO: tag cho bài tập
+    const [tag, setTag] = useState('');
+
     //* Validate từng câu 
     const validateHandler = () => {
         const newMenuList = [...menuList];
 
-        if (!list[index].detail || list[index].answers.some(answer => !answer) || !list[index].correct) {
+        if (!list[index].detail.trim() || list[index].answers.some(answer => !answer.trim()) || !list[index].correct.trim()) {
             newMenuList[index] = false;
         }
         else {
@@ -188,8 +191,9 @@ const Create = (props) => {
 
                 <GeneralInfo 
                     titleChange={titleChangeHandler}
+                    tagChange={setTag}
                     title={title}
-                    isDone={!menuList.some(item => !item) && menuList.length >= 5}
+                    isDone={!menuList.some(item => !item) && menuList.length >= 5 && title.trim() && tag.trim()}
                     sendData={sendDataHandler}
                 />
         
@@ -231,7 +235,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        sendPracticeToServer: (data, title) => dispatch(actions.onSendPractice(data, title)),
+        sendPracticeToServer: (data, title, tag) => dispatch(actions.onSendPractice(data, title, tag)),
         clearData: () => dispatch(actions.onClearData()),
     }
 }

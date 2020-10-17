@@ -10,3 +10,7 @@ export {
 export {
     onSendPractice,
 } from './SendPractice';
+
+export {
+    onGetAllTitle,
+} from './GetAllTitle'

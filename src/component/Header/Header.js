@@ -5,10 +5,10 @@ import './Header.css';
 import NavItems from '../NavItems/NavItems'
 import SideDraw from '../SideDraw/SideDraw';
 
-const Header = () => {
+const Header = (props) => {
     useEffect(() => {
         window.onscroll = () => {
-            const headerHomePage = document.querySelector('.Header-Header');
+            const headerHomePage = document.querySelector('.Header-HomePage');
             if (headerHomePage) {
                 if (window.scrollY) {
                     headerHomePage.classList.remove('Header-Header-Idle');
@@ -26,7 +26,7 @@ const Header = () => {
     }, []);
 
     return (
-        <Layout.Header className="Header-Header Header-Header-Idle">
+        <Layout.Header className={"Header-Header Header-Header-Idle " + props.addInClass}>
             <div className="Header-Nav-PC">
                 <NavItems />
             </div>

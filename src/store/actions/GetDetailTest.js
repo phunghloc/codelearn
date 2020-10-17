@@ -1,18 +1,26 @@
 import * as actionTypes from './actionTypes';
-import questions from '../Questions';
 
-export const onFetchData = () => {
+const axios = require('axios');
+
+const url = 'https://my-burger-phl.firebaseio.com';
+
+export const onFetchData = (id) => {
     return dispatch => {
         dispatch({
             type: actionTypes.ON_FETCH_DATA,
         });
         
-        setTimeout(() => {
-            dispatch({
-                type: actionTypes.ON_FETCH_DATA_SUCCESS,
-                questions: questions,
-            });
-        }, 500);
+        axios.get(url + `/allpractice/${id}.json`)
+            .then(res => {
+                dispatch({
+                    type: actionTypes.ON_FETCH_DATA_SUCCESS,
+                    questions: res.data,
+                })
+            })
+            .catch(() => dispatch({
+                type: actionTypes.ON_FETCH_DATA_FAIL,
+            }))
+        ;
     }
 
 }
