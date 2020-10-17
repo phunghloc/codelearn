@@ -25,11 +25,7 @@ const Create = (props) => {
     const { clearData } = props;
     useEffect(() => {
         clearData();
-        // notification.open({
-        //     message: 'Notification Title',
-        //     key,
-        //     icon: <ExclamationCircleOutlined style={{ color: 'red' }} />,
-        //   });
+        window.scrollTo(0, 0);
     }, [clearData]);
 
     useEffect(() => {

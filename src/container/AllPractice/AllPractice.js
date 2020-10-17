@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Layout } from 'antd';
 
 import './AllPractice.scss';
@@ -9,6 +9,9 @@ import BannerPractice from './BannerPractice/BannerPractice';
 import RouteAllPractice from './RouteAllPractice'
 
 const AllPractice = (props) => {
+    useState(() => {
+        window.scrollTo(0, 0);
+    })
     return (
         <Layout className="AllPractice-Container">
             <HeaderHM addInClass="Header-Practice" />
@@ -16,12 +19,7 @@ const AllPractice = (props) => {
             <Layout.Content className="AllPractice">
                 <Breadcrumb />
                 <BannerPractice />
-
                 <RouteAllPractice {...props} />
-                    
-                
-                
-
             </Layout.Content>
 
             <FooterHM />
