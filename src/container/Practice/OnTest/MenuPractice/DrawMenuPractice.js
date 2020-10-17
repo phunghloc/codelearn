@@ -32,7 +32,8 @@ const DrawMenuPractice = (props) => {
                 <Menu 
                     className="Menu-Menu Menu-Drawer"
                     mode="inline"
-                    selectedKeys={props.current + ''}
+                    defaultChecked="0"
+                    selectedKeys={[props.current + ""]}
                 >
                     {Array(props.list.length).fill(1).map((value, index)=> (
                         <Menu.Item 

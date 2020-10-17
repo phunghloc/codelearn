@@ -32,7 +32,7 @@ const DrawMenuResult = (props) => {
                 <Menu 
                     className="Menu-Menu Menu-Result Menu-Drawer"
                     mode="inline"
-                    selectedKeys={props.current + ''}
+                    selectedKeys={[props.current + ""]}
                 >
                     {props.list.map((value, index)=> (
                         <Menu.Item 

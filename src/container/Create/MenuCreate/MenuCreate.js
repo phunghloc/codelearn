@@ -8,7 +8,7 @@ const menu = (props) => (
     <Menu 
         className="Menu-Menu Menu-Create Menu-Hide"
         mode="inline"
-        selectedKeys={props.current + ''}
+        selectedKeys={[props.current + ""]}
     >
         <button 
             onClick={props.add}

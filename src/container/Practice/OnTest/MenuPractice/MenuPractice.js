@@ -5,11 +5,12 @@ import { MinusOutlined, CheckOutlined } from '@ant-design/icons';
 import './MenuPractice.css';
 
 const MenuPractice = (props) => {
+    console.log(props.current);
     return (
         <Menu 
             className="Menu-Menu Menu-Hide"
             mode="inline"
-            selectedKeys={props.current + ''}
+            selectedKeys={[props.current + ""]}
         >
             {Array(props.list.length).fill(1).map((value, index)=> (
                 <Menu.Item 

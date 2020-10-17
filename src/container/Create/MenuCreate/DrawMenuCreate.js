@@ -32,7 +32,7 @@ const DrawMenuPractice = (props) => {
                 <Menu 
                     className="Menu-Menu Menu-Create Menu-Drawer"
                     mode="inline"
-                    selectedKeys={props.current + ''}
+                    selectedKeys={[props.current + ""]}
                 >
                     <button 
                         onClick={props.add}
