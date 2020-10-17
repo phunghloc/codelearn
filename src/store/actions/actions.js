@@ -1,6 +1,7 @@
 export {
     onFetchData,
     onClearData,
+    onStoreTitle,
 } from './GetDetailTest';
 
 export {

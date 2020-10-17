@@ -20,7 +20,7 @@ const GetResult = (props) => {
                 <HeaderPractice 
                     back={props.history.goBack}
                     title="Luyện tập"
-                    subTitle="Bài luyện tập số 69"
+                    subTitle={props.title}
                 />
 
                 <MenuResult 

@@ -30,3 +30,10 @@ export const onClearData = () => {
         type: actionTypes.ON_CLEAR_DATA,
     }
 }
+
+export const onStoreTitle = (title) => {
+    return {
+        type: actionTypes.ON_STORE_TITLE,
+        title: title,
+    }
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Drawer, Menu } from 'antd';
-import { CheckOutlined, CloseOutlined} from '@ant-design/icons';
+import { CheckOutlined, CloseOutlined, OrderedListOutlined } from '@ant-design/icons';
 
 import './MenuResult.css'; 
 
@@ -20,7 +20,7 @@ const DrawMenuResult = (props) => {
                 onClick={showDrawer} 
                 className="Menu-Btn"
             >
-                Show List 
+                <OrderedListOutlined />
             </div>
             <Drawer
                 placement={'left'}

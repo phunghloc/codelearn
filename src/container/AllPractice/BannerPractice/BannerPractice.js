@@ -9,7 +9,7 @@ import banner from '../../../asset/img/training.jpg';
 const bannerPractice = () => (
     <Row className="BannerPractice" gutter={[12, 36]}>
     
-        <Col lg={18} md={24} >
+        <Col lg={18} xs={24} >
             <div className="BannerPractice-Item">
                 <div className="BannerPractice-Banner-Img">
                     <img src={banner} alt="Training"/>
@@ -20,7 +20,7 @@ const bannerPractice = () => (
             </div>
         </Col>
 
-        <Col lg={6} md={24}>
+        <Col lg={6} xs={24} >
             <div className="BannerPractice-Item" >
                 <div className="BannerPractice-Banner-Img" style={{padding: '12px 0', background: 'none', backgroundColor: '#1A416A'}}>
                     <div className="BannerPractice-Banner-Title">

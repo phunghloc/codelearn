@@ -16,7 +16,7 @@ const IndexPractice = (props) => {
             const [key, value] = param.split('=');
             list[key] = value;
         }
-        console.log(list['id']);
+        
         onFetchData(list['id']);
     }, [onFetchData, props.location.search]);
 
@@ -32,6 +32,7 @@ const mapStateToProps = state => {
         loading: state.questions.loading,
         questions: state.questions.questions,
         answers: state.answers.answers,
+        title: state.questions.title,
     }
 }
 
