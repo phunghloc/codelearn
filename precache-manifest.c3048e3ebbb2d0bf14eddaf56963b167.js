@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b82b41d910a073c6bd1491c46577a1a",
+    "revision": "5fd687583952d9918a55114de4d77ea1",
     "url": "/codelearn/index.html"
   },
   {
-    "revision": "51c70517f9a2838640a4",
+    "revision": "a4df0aa323252be61de0",
     "url": "/codelearn/static/css/2.bd2f563d.chunk.css"
   },
   {
-    "revision": "6fc2b4c842ce9c856b6e",
-    "url": "/codelearn/static/css/main.1679610f.chunk.css"
+    "revision": "0bd99716e54145716247",
+    "url": "/codelearn/static/css/main.1ceff395.chunk.css"
   },
   {
-    "revision": "51c70517f9a2838640a4",
-    "url": "/codelearn/static/js/2.f34fa8e3.chunk.js"
+    "revision": "a4df0aa323252be61de0",
+    "url": "/codelearn/static/js/2.d6419e8b.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/codelearn/static/js/2.f34fa8e3.chunk.js.LICENSE.txt"
+    "url": "/codelearn/static/js/2.d6419e8b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6fc2b4c842ce9c856b6e",
-    "url": "/codelearn/static/js/main.9ee1c457.chunk.js"
+    "revision": "0bd99716e54145716247",
+    "url": "/codelearn/static/js/main.6a6c835e.chunk.js"
   },
   {
     "revision": "3db2b9c21281bad56a79",
@@ -94,5 +94,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7a1d24bc172dee3f4b7f83fb8608405b",
     "url": "/codelearn/static/media/su-kien-lap-trinh.7a1d24bc.png"
+  },
+  {
+    "revision": "19581130977f67f31a7327f8e0428557",
+    "url": "/codelearn/static/media/training.19581130.jpg"
   }
 ]);
