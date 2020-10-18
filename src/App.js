@@ -7,8 +7,6 @@ import IndexPractice from './container/Practice/IndexPractice';
 import Create from './container/Create/Create';
 import AllPractice from './container/AllPractice/AllPractice';
 
-// const IndexPractice = React.lazy(() => import('./container/Practice/IndexPractice'));
-
 function App() {
   return (
     <Switch>

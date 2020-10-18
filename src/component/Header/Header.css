@@ -34,3 +34,15 @@
         padding: 0;
     }
 }
+
+.ant-modal-header {
+    margin-bottom: 14px;
+}
+
+.ant-modal-body {
+    /* background-color: transparent;
+    box-shadow: none; */
+    padding-top: 0;
+    padding-bottom: 0;
+}
+

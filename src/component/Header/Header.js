@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import { Layout } from 'antd';
 
 import './Header.css';
-import NavItems from '../NavItems/NavItems'
+import NavItems from '../NavItems/NavItems';
 import SideDraw from '../SideDraw/SideDraw';
+import AuthInfo from './AuthInfo';
 
 const Header = (props) => {
     useEffect(() => {
@@ -31,9 +32,14 @@ const Header = (props) => {
                 <NavItems />
             </div>
             
-            <div className="Header-Header-Right">
-                <SideDraw />
+            <div className="info" style={{display: 'flex'}}>
+                <AuthInfo email={props.email} />
+
+                <div className="Header-Header-Right">
+                    <SideDraw />
+                </div>
             </div>
+            
         </Layout.Header>
     );
 };

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Layout, PageHeader, notification } from 'antd';
-import { LoadingOutlined, CheckOutlined, ExclamationCircleOutlined } from '@ant-design/icons'
+import { LoadingOutlined, CheckOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
 import { connect } from 'react-redux';
 
 import './Create.css';
@@ -10,6 +10,7 @@ import UlityCreate from './UlityCreate/UlityCreate';
 import QuestionCreate from './QuestionCreate/QuestionCreate';
 import DrawMenuCreate from './MenuCreate/DrawMenuCreate';
 import * as actions from '../../store/actions/actions';
+import RedirectNotAuth from './RedirectNotAuth';
 
 const template = {
     type: 'radio',
@@ -64,7 +65,7 @@ const Create = (props) => {
                 duration: 0,
               });
         } else {
-            props.sendPracticeToServer(list, title, tag);
+            props.sendPracticeToServer(list, title, tag, props.email);
         }
     }
 
@@ -162,6 +163,8 @@ const Create = (props) => {
         validateHandler();
     }
 
+    if (!props.email) return <RedirectNotAuth {...props} />;
+
     return (
         <Layout.Content className="Practice-Container">
             <div className="Practice-Practice Create-Page">
@@ -226,12 +229,13 @@ const mapStateToProps = state => {
         loading: state.sendPractice.loading,
         error: state.sendPractice.error,
         isSend: state.sendPractice.isSend,
+        email: state.auth.email,
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
-        sendPracticeToServer: (data, title, tag) => dispatch(actions.onSendPractice(data, title, tag)),
+        sendPracticeToServer: (data, title, tag, author) => dispatch(actions.onSendPractice(data, title, tag, author)),
         clearData: () => dispatch(actions.onClearData()),
     }
 }

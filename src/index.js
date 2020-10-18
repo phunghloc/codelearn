@@ -12,12 +12,14 @@ import GetDetailTestReducer from './store/reducers/GetDetailTest';
 import SendAnswersReducer from './store/reducers/SendAnswers';
 import SendPracticeReducer from './store/reducers/SendPractice';
 import GetAllTitleReducer from './store/reducers/GetAllTitle';
+import AuthReducer from './store/reducers/Auth';
 
 const rootReducers = combineReducers({
   questions: GetDetailTestReducer,
   answers: SendAnswersReducer,
   sendPractice: SendPracticeReducer,
   getAllTitle: GetAllTitleReducer,
+  auth: AuthReducer,
 });
 
 const store = createStore(rootReducers, applyMiddleware(thunk));

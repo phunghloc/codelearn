@@ -4,7 +4,7 @@ const axios = require('axios');
 
 const url = 'https://my-burger-phl.firebaseio.com';
 
-export const onSendPractice = (data, title, tag) => {
+export const onSendPractice = (data, title, tag, author) => {
     console.log(data, title);
     return dispatch => {
         dispatch({ 
@@ -17,6 +17,7 @@ export const onSendPractice = (data, title, tag) => {
                     title: title,
                     tag: tag,
                     id: res.data.name,
+                    author: author,
                 }
                 axios.post(url + '/alltitle.json', titlePackage)
                     .then(() => dispatch({type: actionTypes.ON_SEND_PRACTICE_SUCCESS}))

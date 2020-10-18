@@ -5,7 +5,6 @@ import { MinusOutlined, CheckOutlined } from '@ant-design/icons';
 import './MenuPractice.css';
 
 const MenuPractice = (props) => {
-    console.log(props.current);
     return (
         <Menu 
             className="Menu-Menu Menu-Hide"
